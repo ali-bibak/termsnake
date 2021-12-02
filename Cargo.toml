@@ -1,0 +1,9 @@
+[package]
+name = "termsnake"
+version = "0.1.0"
+authors = ["Ali Bibak <bibak.ali@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
