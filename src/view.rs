@@ -14,7 +14,7 @@ impl View {
         return view;
     }
 
-    pub fn update(&mut self, model: Model) {
+    pub fn update(&mut self, model: &Model) {
         self.pixels = model.get_map();
     }
 
