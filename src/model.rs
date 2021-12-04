@@ -18,10 +18,11 @@ impl Model {
 
     pub fn debug(&self) {
         for i in 0..self.map.len() {
+            let mut s = "".to_string();
             for j in 0..self.map[0].len() {
-                print!("{}", self.map[i][j]);
+                s.push(self.map[i][j]);
             }
-            println!();
+            println!("{}", s);
         }
     }
 }

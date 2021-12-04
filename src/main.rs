@@ -8,5 +8,7 @@ use controller::Controller;
 fn main() {
     let mut controller = Controller::new();
     controller.debug();
-    controller.draw();
+    for _ in 0..20 {
+        controller.draw();
+    }
 }

@@ -20,10 +20,16 @@ impl View {
 
     pub fn draw(&self) {
         for i in 0..self.pixels.len() {
+            let mut s = "".to_string();
             for j in 0..self.pixels[0].len() {
-                print!("{}", self.pixels[i][j].to_string().green());
+                s.push(self.pixels[i][j]);
             }
-            println!();
+            println!("{}", s.green());
         }
     }
+
+    pub fn clean(&self) {
+        print!("{}", Consts::clean());
+    }
 }
+

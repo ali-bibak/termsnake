@@ -23,6 +23,7 @@ impl Controller {
 
     pub fn draw(&mut self) {
         self.view.update(&self.model);
+        self.view.clean();
         self.view.draw();
     }
 }
